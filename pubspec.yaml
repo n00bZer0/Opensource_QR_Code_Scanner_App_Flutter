@@ -1,0 +1,34 @@
+name: qr_scanner_app
+description: "A simple QR Code Scanner App using Flutter."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  ai_barcode_scanner: ^6.0.1  #  AI-powered QR Scanner (Replaces mobile_scanner)
+  image_picker: ^1.1.2         #  Allows scanning QR codes from Gallery
+  url_launcher: ^6.3.1         #  Opens links in browser, apps
+  qr_flutter: ^4.1.0           #  QR Code Generation
+  share_plus: ^10.1.4          #  Share scanned QR codes
+  google_ml_kit: ^0.19.0       #  Keep for future AI features (optional)
+  flutter_launcher_icons: ^0.14.3
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_icon.png"  #  Path of your new app icon
+  adaptive_icon_background: "#ffffff"  #  Background color for Android adaptive icon
+
